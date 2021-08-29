@@ -45,5 +45,9 @@ const akshay = new Support('Akshay Kumar', 'Dubai', 11);
 
 const alia = new StudentCare('Alia Bhatt', 'Mumbai');
 const ash = new NeptuneDev('Ash', 'Mumbai', 'Android studio');
-ash.releaseApp('1.4.5');
-console.log(ash.name);
+// ash.releaseApp('1.4.5');
+// console.log(ash.name);
+
+
+console.log(min( [1,3,2 ])) ? function min(nums) {  
+    return Math.min(nums) }
