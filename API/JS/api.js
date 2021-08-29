@@ -15,7 +15,14 @@ function loadUsers(){
      .then(response => response.json())
      .then(data => console.log(data))
  }
- loadPost();
+
  function displayUsers(data){
-     console.log(data)
+     const ul = document.getElementById('users');
+     console.log(data);
+    for(const user of data){
+        console.log(user);
+        const li = document.createElement('li');
+        li.innerText = `Name: ${user.name}, Email: ${user.email}`;
+        ul.appendChild(li);
+    }
  }
