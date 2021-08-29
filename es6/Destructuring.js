@@ -22,12 +22,12 @@ const company = {
         work: 'website development',
         employee: 22,
         framework: 'react',
-    tech: {
-        first: 'html',
-        second: 'css',
-        third: 'js'
-     }
-  },
+        tech: {
+            first: 'html',
+            second: 'css',
+            third: 'js'
+        }
+    },
 };
 
 // const work = company.web.work;
