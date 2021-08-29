@@ -10,3 +10,7 @@ const numbers2 = [...numbers, 88];
 numbers.push(55);
 console.log(numbers);
 console.log(numbers2);
+
+
+const cars=['toyota', 'honda','mercedes']; const newCars= [...cars , 'ferrari'];
+console.log(newCars);
