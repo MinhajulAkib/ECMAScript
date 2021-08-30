@@ -15,6 +15,23 @@ function displayPosts(posts) {
         <p>${post.body}</p>
         `;
         postContainer.appendChild(div);
-        console.log(post)
+        console.log(post);
     }
+}
+
+//post
+function addAPost(){
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+  method: 'POST',
+  body: JSON.stringify({
+    title: 'My new post',
+        body: 'This is my posts',
+        userId: 1
+  }),
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  },
+})
+  .then((response) => response.json())
+  .then((json) => console.log(json));
 }
