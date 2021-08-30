@@ -12,8 +12,8 @@ function displayPost(data){
      const ol = document.getElementById('load');
      console.log(data);
      for(const user of data){
-         console.log(user);
-         const li = document.createElement('li');
+        console.log(user);
+        const li = document.createElement('li');
         li.innerText = `Id: ${user.id}, Title: ${user.title}`;
         ol.appendChild(li);
      }
