@@ -1,0 +1,29 @@
+// const bank = owner => {
+//     balance = 0;
+//     return amount => {
+//         balance += amount;
+//         return balance;
+//     }
+// }
+
+
+const bank = owner => {
+    balance = 0;
+    return {
+        deposit: amount => {
+            balance += amount;
+            return balance;
+        },
+        withdraw: amount => {
+            balance -= amount;
+            return balance;
+        }
+    }
+}
+
+const mofijBank = bank('Mofij');
+console.log(mofijBank.deposit(100));
+console.log(mofijBank.deposit(100));
+console.log(mofijBank.deposit(40));
+console.log(mofijBank.withdraw(100));
+console.log(mofijBank.deposit(100));
